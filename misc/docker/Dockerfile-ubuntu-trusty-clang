@@ -8,7 +8,7 @@ ENV CLANG_VERSION 3.8
 # NOTE: build with clang will fail on Ubuntu 14.04.
 RUN apt-get update && \
     apt-get install -y sudo software-properties-common && \
-    add-apt-repository http://openrtm.org/pub/Linux/ubuntu/ && \
+    add-apt-repository ppa:choreonoid.org/openrtm && \
     apt-get update && \
     apt-get install -y --force-yes \
         clang-${CLANG_VERSION} llvm-${CLANG_VERSION}-dev \
