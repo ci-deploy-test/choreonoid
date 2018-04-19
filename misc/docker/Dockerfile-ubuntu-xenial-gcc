@@ -2,7 +2,7 @@ FROM ubuntu:xenial
 
 RUN apt-get update && \
     apt-get install -y sudo software-properties-common && \
-    add-apt-repository ppa:choreonoid.org/choreonoid && \
+    add-apt-repository ppa:choreonoid.org/openrtm && \
     apt-get update && \
     apt-get install -y --force-yes \
         gcc g++ \
